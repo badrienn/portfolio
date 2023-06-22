@@ -1,0 +1,82 @@
+.cv{
+    width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+        "main main side";
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.cv-head{
+    display: flex;
+    justify-content: space-between;
+}
+.cv-img-container{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 250px;
+    width: 250px;
+    margin: auto;
+}
+.profile-pic{
+    width: 250px;
+}
+
+.cv-main-left{
+    grid-area: main;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cv-contacts > p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.cv-contacts a{
+    text-decoration: none;
+    color: var(--rich-black);
+}
+.cv-contacts a:hover{
+    text-decoration: underline;
+}
+.cv-work-xp{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.cv-date{
+    display: inline-block;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.work-xp-skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 5px 0;
+}
+.work-xp-skills > span{
+    padding: 3px 8px;
+    border-radius: 15px;
+    opacity: 0.8;
+    background-color: var(--main-dark);
+    color: var(--pure-white)
+}
+.cv-main-right{
+    grid-area: side;
+    padding: 2rem;
+}
+.cv-skills{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cv-list{
+    list-style: none;
+}
