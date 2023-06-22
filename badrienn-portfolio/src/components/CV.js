@@ -1,4 +1,4 @@
-import { HiMail, HiPhone, HiLocationMarker } from "react-icons/hi"
+import { HiMail, HiLocationMarker } from "react-icons/hi"
 import { FaLinkedin, FaGithub } from "react-icons/fa"
 import { useEffect } from "react"
 import { Link } from "react-router-dom"
@@ -19,8 +19,7 @@ export default function CV() {
                     </div>
                     <div className="cv-contacts">
                         <p><HiMail /> adrienn.balazs.93@gmail.com</p>
-                        <p><HiPhone /> +36 20 463 9930</p>
-                        <p><HiLocationMarker /> 1149, Budapest</p>
+                        <p><HiLocationMarker /> Budapest, Hungary</p>
                         <p><FaLinkedin /> <Link to="https://www.linkedin.com/in/adrienn-bal%C3%A1zs-704528278/" target="_blank">adrienn-balázs-704528278</Link></p>
                         <p><FaGithub /><Link to="https://github.com/badrienn" target="_blank">badrienn</Link></p>
                     </div>
