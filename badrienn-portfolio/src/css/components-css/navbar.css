@@ -1,3 +1,23 @@
+.navbar-top{
+    width: 100vw;
+}
+.burger-btn{
+    background-color: var(--main-light);
+    border: none;
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+    display: none;
+}
+.burger-btn:hover{
+    cursor: pointer;
+    background-color: var(--main-dark);
+    color: var(--main-light);
+}
 .navbar-top-ul{
     list-style: none;
     height: 4em;
@@ -8,10 +28,10 @@
     justify-content: space-around;
     align-items: center;
 }
-
 .navbar-top-navlink{
-    padding: 1rem;
-    border-radius: 2rem;
+    padding: 5px;
+    border-radius: 10px;
+    width: 200px;
     text-decoration: none;
     color: var(--main-dark);
     font-weight: bold;
@@ -23,4 +43,26 @@
 .navbar-top-navlink.active{
     background-color: var(--main-dark);
     color: var(--pure-white)
+}
+
+@media screen and (max-width: 768px){
+    .navbar-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .burger-btn{
+        display: block;
+    }
+    .navbar-top-ul{
+        height: 7em;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100vw;
+        gap: 16px;
+        display: none;
+    }
+    .expanded-nav{
+        display: flex;
+    }
 }
