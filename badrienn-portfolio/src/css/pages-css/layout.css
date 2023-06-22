@@ -1,0 +1,18 @@
+.all-container{
+    display: grid;
+    grid-template-areas: 
+        "head head head"
+        "main main main"
+        "foot foot foot";
+    color: var(--rich-black);
+}
+.header{
+    grid-area: head;
+    
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: foot;
+}
