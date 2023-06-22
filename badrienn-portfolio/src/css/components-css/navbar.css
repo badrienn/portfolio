@@ -1,0 +1,26 @@
+.navbar-top-ul{
+    list-style: none;
+    height: 4em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-top-navlink{
+    padding: 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: var(--main-dark);
+    font-weight: bold;
+}
+.navbar-top-navlink:hover{
+    background-color: var(--main-dark);
+    color: var(--pure-white)
+}
+.navbar-top-navlink.active{
+    background-color: var(--main-dark);
+    color: var(--pure-white)
+}
