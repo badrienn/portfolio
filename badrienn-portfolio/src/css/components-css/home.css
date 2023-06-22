@@ -1,0 +1,31 @@
+html{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
+.home-section{
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.home-section > a{
+    padding: 10px 15px;
+    border-radius: 25px;
+    background-color: var(--main-dark);
+    color: var(--pure-white);
+    text-decoration: none;
+}
+
+.home-section > p{
+    padding: 0 20px;
+    text-align: center;
+}
