@@ -10,10 +10,10 @@ export default function Navbar(){
         <nav className="navbar-top">
             <button className="burger-btn" onClick={() => setIsExpanded(!isExpanded)}><HiMenu/></button>
             <ul className={isExpanded ? "navbar-top-ul expanded-nav" : "navbar-top-ul"}>
-                <li><NavLink className={"navbar-top-navlink"} to="/">HOME</NavLink></li>
-                <li><NavLink className={"navbar-top-navlink"} to="/pages/cv">CV</NavLink></li>
-                <li><NavLink className={"navbar-top-navlink"} to="/pages/school-projects">SCHOOL PROJECTS</NavLink></li>
-                <li><NavLink className={"navbar-top-navlink"} to="/pages/personal-projects">PERSONAL PROJECTS</NavLink></li>
+                <li><NavLink className={"navbar-top-navlink"} to="/"><span>HOME</span></NavLink></li>
+                <li><NavLink className={"navbar-top-navlink"} to="/pages/cv"><span>RESUMÉ</span></NavLink></li>
+                <li><NavLink className={"navbar-top-navlink"} to="/pages/school-projects"><span>SCHOOL PROJECTS</span></NavLink></li>
+                <li><NavLink className={"navbar-top-navlink"} to="/pages/personal-projects"><span>PERSONAL PROJECTS</span></NavLink></li>
             </ul>
         </nav>
     )
