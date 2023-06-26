@@ -72,14 +72,7 @@ export default function CV() {
                 </div>
                 <section className="cv-skills">
                     <h3>Skills & Education</h3>
-                    <div className="cv-skill-card">
-                        <h4>Languages</h4>
-                        <p>Hungarian (first language)</p>
-                        <p>English (C2)</p>
-                        <p>German (C1)</p>
-                        <p>French (C1)</p>
-                    </div>
-                    <div className="cv-skill-card">
+                    <div className="cv-skill-card skills">
                         <h4>Skills</h4>
                         <p>Frontend programming - HTML, CSS, Javascript, React</p>
                         <p>Analytical thinking</p>
@@ -87,7 +80,14 @@ export default function CV() {
                         <p>Design skills</p>
                         <p>Initiative</p>
                     </div>
-                    <div className="cv-skill-card">
+                    <div className="cv-skill-card languages">
+                        <h4>Languages</h4>
+                        <p>Hungarian (first language)</p>
+                        <p>English (C2)</p>
+                        <p>German (C1)</p>
+                        <p>French (C1)</p>
+                    </div>
+                    <div className="cv-skill-card education">
                         <h4>Education</h4>
                         <ul className="cv-list">
                             <li>
@@ -104,7 +104,7 @@ export default function CV() {
                             </li>
                         </ul>
                     </div>
-                    <div className="cv-skill-card">
+                    <div className="cv-skill-card hobbies">
                         <h4>Hobbies & Interests</h4>
                         <p>Studying Japanese (2 years of experience)</p>
                         <p>UX and UI design</p>

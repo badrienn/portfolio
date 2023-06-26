@@ -1,9 +1,10 @@
 .cv{
-    width: 900px;
+    max-width: 900px;
     margin: auto;
     display: grid;
     grid-template-areas: 
-        "main main side";
+        "main side";
+    grid-template-columns: 2fr 1fr;
     gap: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -13,6 +14,8 @@
 .cv-head{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .cv-img-container{
     border-radius: 50%;
@@ -79,4 +82,30 @@
 }
 .cv-list{
     list-style: none;
+}
+
+@media screen and (max-width: 768px){
+    .cv{
+        max-width: 650px;
+    }
+    .cv-img-container{
+        width: 200px;
+        height: 200px;
+    }
+    .profile-pic{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .cv{
+        max-width: 400px;
+    }
+    .cv-img-container{
+        width: 150px;
+        height: 150px;
+    }
+    .profile-pic{
+        width: 150px;
+    }
 }
