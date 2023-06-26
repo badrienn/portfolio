@@ -6,7 +6,7 @@
         "head head" 
         "main side";
     grid-template-columns: 2fr 1fr;
-    margin-top: 2rem;
+    margin-top: 6rem;
     margin-bottom: 2rem;
     border-radius: 1rem;
     overflow: hidden;
@@ -86,7 +86,8 @@
     border-radius: 15px;
     opacity: 0.8;
     background-color: var(--main-dark);
-    color: var(--pure-white)
+    color: var(--pure-white);
+    font-size: 0.8rem;
 }
 .cv-main-right{
     grid-area: side;
