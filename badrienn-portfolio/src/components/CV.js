@@ -41,35 +41,35 @@ export default function CV() {
                         <h4>Frontend developer, toy store webshop project</h4>
                         <small className="cv-date">April 2023 - May 2023 | Progmatic Academy</small>
                         <p>Developed the frontend of a webshop with a team of 4 fellow students in React, using Agile/Scrum methodology. My main areas of focus were the overall design, the database query functions, and implementing a feature to add products to the user's Favourites.</p>
-                        <small className="work-xp-skills">
+                        <div className="work-xp-skills">
                             <span>React</span>
                             <span>CSS</span>
                             <span>Scrum</span>
                             <span>Git</span>
                             <span>Teamwork</span>
-                        </small>
+                        </div>
                     </div>
                     <div className="cv-work-card">
                         <h4>Desktop Support Technician (L2)</h4>
                         <small className="cv-date">June 2020 - May 2023 | Tata Consultancy Services Hungary</small>
                         <p>Handled client issues escalated by the 1st level support team. Often worked with other support teams to provide solutions for more complex issues. Helped to maintain and expand the team's knowledge base. Provided training for new joiners.</p>
-                        <small className="work-xp-skills">
+                        <div className="work-xp-skills">
                             <span>Analytical thinking</span>
                             <span>Training</span>
                             <span>Documentation</span>
                             <span>Communication</span>
-                        </small>
+                        </div>
                     </div>
                     <div className="cv-work-card">
                         <h4>Multilingual Service Desk Analyst (L1)</h4>
                         <small className="cv-date">August 2018 - June 2020 | Tata Consultancy Services Hungary</small>
                         <p>Provided 1st level troubleshooting via phone, email, and chat in English, German, and French. Created a number of user guides and email templates for internal use. Our user base comprised of team members of a medical device manufacturer, from factory worker to C-level.</p>
-                        <small className="work-xp-skills">
+                        <div className="work-xp-skills">
                             <span>ServiceNow</span>
                             <span>Office 365</span>
                             <span>Windows 10</span>
                             <span>Active Directory</span>
-                        </small>
+                        </div>
                     </div>
                 </section>
             </div>
