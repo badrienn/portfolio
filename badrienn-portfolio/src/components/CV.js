@@ -11,23 +11,30 @@ export default function CV() {
     )
     return (
         <div className="cv pure-white-bg">
-            <div className="cv-main-left">
-                <div className="cv-head">
-                    <div className="cv-title">
+            <div className="cv-head">
+                <div className="cv-head-left">
+                    <section className="cv-title">
                         <h2>Adrienn Balázs</h2>
                         <p>frontend developer</p>
-                    </div>
-                    <div className="cv-contacts">
+                    </section>
+                    <section className="cv-contacts">
                         <p><HiMail /> adrienn.balazs.93@gmail.com</p>
                         <p><HiLocationMarker /> Budapest, Hungary</p>
                         <p><FaLinkedin /> <Link to="https://www.linkedin.com/in/adrienn-bal%C3%A1zs-704528278/" target="_blank">adrienn-balázs-704528278</Link></p>
                         <p><FaGithub /><Link to="https://github.com/badrienn" target="_blank">badrienn</Link></p>
+                    </section>
+                    <section className="cv-about">
+                        <h3>Profile</h3>
+                        <p>I am an aspiring Frontend Developer with an interest in UX and UI design and a background in IT support and language education. I am looking for a Junior Frontend or Web Developer position where I can get started on my developer career journey and expand my knowledge of this exciting field.</p>
+                    </section>
+                </div>
+                <div className="cv-head-right dark-bg">
+                    <div className="cv-img-container">
+                        <img className="profile-pic" src="/profile-pic.jpg" alt="Friendly frontend developer" />
                     </div>
                 </div>
-                <section className="cv-about">
-                    <h3>Profile</h3>
-                    <p>I am an aspiring Frontend Developer with an interest in UX and UI design and a background in IT support and language education. I am looking for a Junior Frontend or Web Developer position where I can get started on my developer career journey and expand my knowledge of this exciting field.</p>
-                </section>
+            </div>
+            <div className="cv-main-left">
                 <section className="cv-work-xp">
                     <h3>Work experience</h3>
                     <div className="cv-work-card">
@@ -67,14 +74,11 @@ export default function CV() {
                 </section>
             </div>
             <div className="cv-main-right dark-bg">
-                <div className="cv-img-container">
-                    <img className="profile-pic" src="/profile-pic.jpg" alt="Friendly frontend developer" />
-                </div>
                 <section className="cv-skills">
                     <h3>Skills & Education</h3>
                     <div className="cv-skill-card skills">
                         <h4>Skills</h4>
-                        <p>Frontend programming - HTML, CSS, Javascript, React</p>
+                        <p>HTML, CSS, Javascript, React</p>
                         <p>Analytical thinking</p>
                         <p>Written and spoken communication</p>
                         <p>Design skills</p>

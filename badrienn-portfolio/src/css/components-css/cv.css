@@ -2,20 +2,37 @@
     max-width: 900px;
     margin: auto;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
+        "head head" 
         "main side";
     grid-template-columns: 2fr 1fr;
-    gap: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 1rem;
     overflow: hidden;
 }
 .cv-head{
+    display: grid;
+    grid-area: head;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "intro img";
+}
+.cv-head-left{
+    grid-area: intro;
+    padding: 2rem;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.cv-title > h2{
+    font-size: 2rem;
+    letter-spacing: -0.3px;
+}
+.cv-head-right{
+    grid-area: img;
+    padding: 2rem;
 }
 .cv-img-container{
     border-radius: 50%;
@@ -31,9 +48,10 @@
 .cv-main-left{
     grid-area: main;
     padding: 2rem;
+    padding-top: 0;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 2rem;
 }
 .cv-contacts > p{
     display: flex;
@@ -73,9 +91,10 @@
 .cv-main-right{
     grid-area: side;
     padding: 2rem;
+    padding-top: 0;
 }
 .cv-skills{
-    padding-top: 20px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -87,6 +106,35 @@
 @media screen and (max-width: 768px){
     .cv{
         max-width: 650px;
+        grid-template-areas: 
+        "head"
+        "main" 
+        "side";
+        grid-template-columns: 3fr;
+    }
+    .cv-head{
+        grid-template-areas: 
+            "img"
+            "intro";
+        grid-template-columns: 3fr;
+    }
+    .cv-main-right{
+        padding-top: 2rem;
+    }
+    .cv-skills{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 2rem;
+    }
+    .cv-skills > h3{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .cv{
+        max-width: 400px;  
     }
     .cv-img-container{
         width: 200px;
@@ -95,17 +143,7 @@
     .profile-pic{
         width: 200px;
     }
-}
-
-@media screen and (max-width: 480px){
-    .cv{
-        max-width: 400px;
-    }
-    .cv-img-container{
-        width: 150px;
-        height: 150px;
-    }
-    .profile-pic{
-        width: 150px;
+    .cv-skills{
+        gap: 1rem;
     }
 }
