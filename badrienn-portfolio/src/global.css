@@ -13,7 +13,8 @@
 }
 .light-bg{
   background-color: var(--main-light);
-  color: var(--main-dark)
+  color: var(--main-dark);
+  background-image: url("./svg/blue-noise.svg");
 }
 .pure-white-bg{
   background-color: var(--pure-white);
