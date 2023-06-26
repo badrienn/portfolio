@@ -9,24 +9,25 @@ import SchoolProjectsPage from './pages/SchoolProjectsPage'
 import PersonalProjectsPage from './pages/PersonalProjectsPage'
 
 const router = createBrowserRouter([
+    ,
     {
       path: "/",
-      element: <Homepage />
-    },
-    {
-      path: "/pages",
       element: <Layout />,
       children: [
         {
-          path: "/pages/cv",
+          path: "/",
+          element: <Homepage />
+        },
+        {
+          path: "/cv",
           element: <CVpage />
         },
         {
-          path: "/pages/school-projects",
+          path: "/school-projects",
           element: <SchoolProjectsPage />
         },
         {
-          path: "/pages/personal-projects",
+          path: "/personal-projects",
           element: <PersonalProjectsPage />
         }
       ]
