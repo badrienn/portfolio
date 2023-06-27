@@ -9,7 +9,6 @@ import SchoolProjectsPage from './pages/SchoolProjectsPage'
 import PersonalProjectsPage from './pages/PersonalProjectsPage'
 
 const router = createBrowserRouter([
-    ,
     {
       path: "/",
       element: <Layout />,
